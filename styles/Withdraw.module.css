@@ -1,0 +1,94 @@
+.container {
+  background-image: url("/sprites/bg_game.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.exit {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  background: url("/sprites/card.png") no-repeat center center;
+  background-size: contain;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.amounts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 80%;
+}
+
+.amountButton {
+  background-color: #fff;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  margin-top: 10px;
+}
+
+.customAmount {
+  width: 80%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.withdrawButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.withdrawLabel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}

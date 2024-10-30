@@ -1,0 +1,85 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/sprites/bg_game.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Adjust max-width to fit the content */
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background-color: #3b0a45; /* Card background color */
+  border: 2px solid #00ffff; /* Card border color */
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  width: 300px; /* Adjust card width */
+  height: 400px; /* Adjust card height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.balance {
+  background-color: #3b0a45; /* Balance background color */
+  border: 2px solid #00ffff; /* Balance border color */
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.pageWrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
+.logoutButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.logoutButton:hover {
+  opacity: 0.8;
+}

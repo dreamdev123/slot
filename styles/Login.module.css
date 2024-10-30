@@ -1,0 +1,204 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exitButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  z-index: 1;
+}
+
+.homeButton,
+.card {
+  width: 350px;
+  height: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  background-image: url("/sprites/card.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cardContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.cardContent h2 {
+  margin-bottom: 10px;
+}
+
+.cardContent > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.card h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.actionButton {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.actionButton span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  font-family: "kgredhands", sans-serif;
+}
+
+.actionButton img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card p {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 70%;
+}
+
+.input input {
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    gap: 15px;
+  }
+
+  .card {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .actionButton {
+    width: 100%;
+    height: 45px;
+  }
+
+  .actionButton span {
+    font-size: 16px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .input input {
+    width: 100%;
+  }
+}
+
+.buttonText {
+  position: absolute;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.customConnectButtonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/sprites/but_coin_bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 100px;
+}
+
+.customConnectButtonWrapper > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.customConnectButtonText {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
